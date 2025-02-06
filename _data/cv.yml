@@ -51,10 +51,10 @@
 - title: Open Source Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/sagasv5-xw/map2map/tree/styled_srsgan">al-folio</a>
+    - title: <a href="https://github.com/sagasv5-xw/map2map/tree/styled_srsgan">map2map</a>
       year: 2023
       description: A style-based super-resolution model for cosmological N-body simulations.
-    - title: <a href="https://github.com/xwzhang98/SREmulator">al-folio</a>
+    - title: <a href="https://github.com/xwzhang98/SREmulator">SREmulator</a>
       year: 2024
       description: Emulator for cosmological simulations.
 
@@ -83,4 +83,4 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Photography, etc.
+    - Photography, etc.
