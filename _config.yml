@@ -192,6 +192,12 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _posts
+  - _pages/blog.md
+  - _pages/profiles.md
+  - _pages/dropdown.md
+  - _pages/repositories.md
+  - _news
 keep_files:
   - CNAME
   - .nojekyll
@@ -246,27 +252,27 @@ terser:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: "/blog/:year/"
-    tag: "/blog/tag/:name/"
-    category: "/blog/category/:name/"
-
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+#jekyll-archives:
+#  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+#  layouts:
+#    year: archive-year
+#    tag: archive-tag
+#    category: archive-category
+#  permalinks:
+#    year: "/blog/:year/"
+#    tag: "/blog/tag/:name/"
+#    category: "/blog/category/:name/"
+#
+#display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
+#display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Zhang]
+  first_name: [Xiaowen, X.]
 
   style: apa
   locale: en
