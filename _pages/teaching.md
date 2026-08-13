@@ -16,6 +16,6 @@ nav_order: 6
 
 ## Research Mentoring
 
-- **Fatemeh Hafezianzadeh** (graduate student) — *Super-resolution of Lyman-α Forest Simulations* (2024–present); first author of [arXiv:2507.16189](https://arxiv.org/abs/2507.16189)
-- **Ankita Dasgupta** (undergraduate) — *An Emulator for Deterministic Super-Resolution Output* (2023–2024); co-author of [OJA 8, E13](https://doi.org/10.33232/001c.129471)
-- **Aidan Catalano & Matthew Pan** (undergraduates) — *Learning Cosmological Simulations with Graph Neural Networks* (2025–present)
+- **Fatemeh Hafezianzadeh** (graduate student) — _Super-resolution of Lyman-α Forest Simulations_ (2024–present); first author of [arXiv:2507.16189](https://arxiv.org/abs/2507.16189)
+- **Ankita Dasgupta** (undergraduate) — _An Emulator for Deterministic Super-Resolution Output_ (2023–2024); co-author of [OJA 8, E13](https://doi.org/10.33232/001c.129471)
+- **Aidan Catalano & Matthew Pan** (undergraduates) — _Learning Cosmological Simulations with Graph Neural Networks_ (2025–present)

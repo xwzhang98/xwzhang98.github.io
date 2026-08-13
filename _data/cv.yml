@@ -29,16 +29,16 @@
 - title: Experience
   type: time_table
   contents:
-#    - title: Research Assistant
-#      institution: Carnegie Mellon University, Pittsburgh, Pennsylvania, US
-#      year: 2021 - now
-#      description:
-#        - Description 1.
-#        - Description 2.
-#        - title: Description 3.
-#          contents:
-#            - Sub-description 1.
-#            - Sub-description 2.
+    #    - title: Research Assistant
+    #      institution: Carnegie Mellon University, Pittsburgh, Pennsylvania, US
+    #      year: 2021 - now
+    #      description:
+    #        - Description 1.
+    #        - Description 2.
+    #        - title: Description 3.
+    #          contents:
+    #            - Sub-description 1.
+    #            - Sub-description 2.
     - title: Research Assistant
       institution: Institute of Mathematical Science, Shanghaitech University, Shanghai, China
       year: 2020 - 2021
