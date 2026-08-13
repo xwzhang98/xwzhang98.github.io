@@ -3,8 +3,6 @@
   contents:
     - name: Full Name
       value: Xiaowen Zhang
-    - name: Date of Birth
-      value: 22nd Aug 1998
     - name: Languages
       value: Chinese, English
 
@@ -22,7 +20,7 @@
             - Learn to simulate universe with Graph Neural Network.
             - AI acceleration of scientific research.
     - title: Bachelor
-      institution: School of Phsical Science an Technology, Shanghaitech University, Shanghai, China
+      institution: School of Physical Science and Technology, ShanghaiTech University, Shanghai, China
       year: 2016 - 2020
 #      description:
 #        - Description 1.

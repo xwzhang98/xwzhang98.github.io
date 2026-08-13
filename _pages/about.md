@@ -2,22 +2,22 @@
 layout: about
 title: About
 permalink: /
-subtitle: <a href='#'>Carnegie Mellon University</a>
+subtitle: Ph.D. candidate in Physics, <a href='https://www.cmu.edu/physics/'>Carnegie Mellon University</a>
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>8109 Wean Hall</p>
+    <p>McWilliams Center for Cosmology & Astrophysics</p>
     <p>5000 Forbes Avenue</p>
-    <p>Pittsburgh, PA 15206</p>
+    <p>Pittsburgh, PA 15213</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -26,14 +26,15 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-I'm a fourth-year physics Ph.D. student at Carnegie Mellon University. I obtained my Bachelor's degree in Physics from ShanghaiTech University.
 
-[//]: # (Write your biography here. Tell the world about yourself. Link to your favorite [subreddit]&#40;http://reddit.com&#41;. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.)
+I am a Ph.D. candidate in Physics at Carnegie Mellon University (expected 2027), working at the [McWilliams Center for Cosmology & Astrophysics](https://www.cmu.edu/cosmology/) with Prof. Tiziana Di Matteo and Prof. Rupert Croft. I build machine learning methods that make expensive scientific computation reachable.
 
-[//]: # ()
-[//]: # (Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page]&#40;/al-folio/publications/&#41; automatically.)
+My research develops AI methods that break the volume–resolution trade-off in cosmological simulation:
 
-[//]: # ()
-[//]: # (Link to your social media connections, too. This theme is set up to use [Font Awesome icons]&#40;https://fontawesome.com/&#41; and [Academicons]&#40;https://jpswalsh.github.io/academicons/&#41;, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.)
+- **Super-resolution and emulation** — a time-conditioned style-based GAN that super-resolves N-body simulations by **512×** in particle count, a deterministic emulator that recovers specific high-resolution realizations, and a hydrodynamic field emulator reaching sub-percent accuracy at **~450×** the speed of direct simulation.
+- **Foundation models for simulations** — a shared embedding space that makes simulations comparable across codes, resolutions, and modalities, plus interpretability of what astronomical foundation models like AION-1 encode physically.
+- **LLM agents for research** — [SimAgents](https://aclanthology.org/2025.ijcnlp-demo.7/) (IJCNLP-AACL 2025), a multi-agent system that turns papers and manuals into runnable simulation configurations.
 
-[//]: # (![img.png]&#40;img.png&#41;)
+I am the principal investigator on an ACCESS HPC allocation, and I release my methods as open-source software ([map2map](https://github.com/xwzhang98/map2map/tree/stylegan2), [SREmulator](https://github.com/xwzhang98/SREmulator)).
+
+Before CMU, I received my B.S. in Physics from ShanghaiTech University, spent a year as a visiting student at UC Berkeley, and worked on topological data analysis at ShanghaiTech's Institute of Mathematical Sciences.
