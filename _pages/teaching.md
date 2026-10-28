@@ -13,6 +13,7 @@ nav_order: 6
 - **33-142 / 33-122 Introductory Physics II** — led weekly recitations and office hours, graded coursework
 - **33-231 Physical Analysis** — led weekly office hours, graded coursework
 - **33-341 Thermal Physics I** — grader
+- **33-101 First Year Seminar** (instructor: Prof. Tiziana Di Matteo) — designed and taught the module on using LLM tools in coursework, and guest-lectured
 
 ## Research Mentoring
 

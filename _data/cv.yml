@@ -3,80 +3,144 @@
   contents:
     - name: Full Name
       value: Xiaowen Zhang
+    - name: Affiliation
+      value: McWilliams Center for Cosmology & Astrophysics, Carnegie Mellon University
+    - name: ORCID
+      value: <a href="https://orcid.org/0009-0008-0370-6021">0009-0008-0370-6021</a>
     - name: Languages
-      value: Chinese, English
+      value: Mandarin Chinese (native), English (fluent)
+
+- title: Research Interests
+  type: list
+  contents:
+    - "<b>Cosmology:</b> large-scale structure and nonlinear structure formation, N-body and hydrodynamic simulations, emulators and surrogate models, simulation-based inference"
+    - "<b>Machine learning:</b> generative models, graph neural networks, representation learning and foundation models for simulation data, LLM agents for simulation workflows"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD Candidate
-      institution: Carnegie Mellon University, Pittsburgh, Pennsylvania, US
-      year: 2021 - now
+    - title: Ph.D. in Physics, expected 2027
+      institution: Carnegie Mellon University, Pittsburgh, USA
+      year: 2021–present
       description:
-        - Super-resolution of cosmological simulation.
-        - Emulation of cosmological simulations.
-        - title: On going project.
-          contents:
-            - Learn to simulate universe with Graph Neural Network.
-            - AI acceleration of scientific research.
-    - title: Bachelor
-      institution: School of Physical Science and Technology, ShanghaiTech University, Shanghai, China
-      year: 2016 - 2020
-#      description:
-#        - Description 1.
-#        - Description 2.
+        - "Advisors: Prof. Tiziana Di Matteo and Prof. Rupert Croft"
+    - title: B.S. in Physics
+      institution: ShanghaiTech University, Shanghai, China
+      year: 2016–2020
+    - title: Visiting Student, Berkeley Physics International Education (BPIE) Program
+      institution: University of California, Berkeley, USA
+      year: 2018–2019
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    #    - title: Research Assistant
-    #      institution: Carnegie Mellon University, Pittsburgh, Pennsylvania, US
-    #      year: 2021 - now
-    #      description:
-    #        - Description 1.
-    #        - Description 2.
-    #        - title: Description 3.
-    #          contents:
-    #            - Sub-description 1.
-    #            - Sub-description 2.
+    - title: Graduate Research Assistant
+      institution: McWilliams Center for Cosmology & Astrophysics, Carnegie Mellon University
+      year: 2021–present
+      description:
+        - 'Super-resolution of N-body simulations across cosmic time: 512× more particles, validated on power spectra, halo mass functions, and merger trees. First author, <a href="https://doi.org/10.1093/mnras/stad3940">MNRAS</a>.'
+        - 'Deterministic emulator that recovers the specific realization implied by a simulation''s initial conditions (first author, <a href="https://doi.org/10.33232/001c.129471">OJAp</a>); the same method, applied by a mentee to the Lyman-α forest, reaches sub-percent accuracy at 260× the speed of the hydrodynamic solver (second author, <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>).'
+        - "Cosmology-aware super-resolution: one model for every cosmology in the Quijote suite. First author, submitted."
+        - 'SimAgents, a multi-agent LLM system that configures and runs MP-GADGET simulations from the literature: 80% fewer setup errors, 83× faster setup. First author, <a href="https://doi.org/10.18653/v1/2025.ijcnlp-demo.7">IJCNLP-AACL 2025</a>.'
     - title: Research Assistant
-      institution: Institute of Mathematical Science, Shanghaitech University, Shanghai, China
-      year: 2020 - 2021
+      institution: Institute of Mathematical Sciences, ShanghaiTech University
+      year: 2020–2021
       description:
-        - Topological data analysis.
-        - Manifold learning via curvature reconstruction.
+        - Topological data analysis of high-dimensional cosmological datasets; tropical-geometry representations of neural network decision boundaries.
 
-- title: Open Source Projects
+- title: Talks & Presentations
   type: time_table
   contents:
-    - title: <a href="https://github.com/sagasv5-xw/map2map/tree/styled_srsgan">map2map</a>
-      year: 2023
-      description: A style-based super-resolution model for cosmological N-body simulations.
-    - title: <a href="https://github.com/xwzhang98/SREmulator">SREmulator</a>
-      year: 2024
-      description: Emulator for cosmological simulations.
+    - title: "Talk: A Shared “Language” for Simulated Universes: Foundation Representations for Galaxy Catalogs"
+      institution: KAAI Workshop on Foundation Models & Agentic Methods for Astrophysical Simulation, Pittsburgh, PA
+      year: Aug 2026
+    - title: "Talk: AI Accelerators for Cosmological Simulations: Super-Resolution and Emulation"
+      institution: 2nd Annual Cosmic Horizons Conference (CosmicAI), Charlottesville, VA
+      year: Jul 2026
+    - title: "Talk: Accelerating cosmological simulations with super-resolution; LLMs for running simulations"
+      institution: "COSMO-25: 28th International Conference on Particle Physics & Cosmology, Carnegie Mellon University"
+      year: Oct 2025
+    - title: "Poster: AI-assisted Super-Resolution Cosmological Simulations IV: An Emulator for Deterministic Realizations"
+      institution: Machine Learning in Astronomical Surveys, Flatiron Institute
+      year: Nov 2023
+    - title: "Poster: AI-assisted Super-Resolution Cosmological Simulations III: Time Evolution"
+      institution: "Cosmic Connections: A ML × Astrophysics Symposium, Flatiron Institute"
+      year: May 2023
 
-#- title: Honors and Awards
-#  type: time_table
-#  contents:
-#    - year: 2021
-#      items:
-#        -
-#    - year: 2020
-#      items:
-#        - Max Planck Medal
+- title: Computing Allocations
+  type: time_table
+  contents:
+    - title: NSF ACCESS Allocation PHY250036 (PI)
+      year: 2025–present
+      description:
+        - Learning Cosmological Simulations with Graph Neural Networks
+    - title: NSF ACCESS Allocation PHY240032
+      year: 2024–2025
+      description:
+        - An Emulator for Transforming Random Super-Resolution Realizations to Deterministic High-Resolution Outputs
 
-- title: Academic Interests
+- title: Research Support & Collaborations
+  type: time_table
+  contents:
+    - title: KAAI Program, McWilliams Center, Carnegie Mellon University
+      year: "2026"
+      description:
+        - Interdisciplinary program on AI for astrophysical simulation; summer research support
+    - title: Block Center Seed Fund, AI Acceleration of Scientific Research
+      institution: Carnegie Mellon University
+      description:
+        - "Team member (PI: Prof. Rupert Croft); supported the SimAgents project"
+    - title: Travel Support, Simons Foundation / Flatiron Institute
+      year: "2023"
+      description:
+        - "Cosmic Connections: A ML × Astrophysics Symposium"
+
+- title: Teaching & Mentoring
   type: nested_list
   contents:
-    - title: Cosmological Simulations.
+    - title: Research Mentees
       items:
-        - Large-scale structures.
-        - Hydrodynamic simulations.
-    - title: Deep Learning.
+        - 'Fatemeh Hafezianzadeh (graduate), Super-resolution of Lyman-α Forest Simulations, 2024–present; first author of <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>'
+        - 'Ankita Dasgupta (undergraduate), An Emulator for Deterministic Super-Resolution Output, 2023–2024; co-author of <a href="https://doi.org/10.33232/001c.129471">OJAp 8, E13</a>'
+        - Aidan Catalano & Matthew Pan (undergraduates), Learning Cosmological Simulations with Graph Neural Networks, 2025–present
+    - title: Graduate Teaching Assistant, Carnegie Mellon University
       items:
-        - Deep generative model.
-        - Graph neural network.
+        - 33-152 Matter & Interactions II, 33-142/122 Introductory Physics II, 33-231 Physical Analysis (recitations, office hours, grading)
+        - 33-341 Thermal Physics I (grader)
+        - "33-101 First Year Seminar (instructor: Prof. Tiziana Di Matteo): designed and taught the module on using LLM tools in coursework, and guest-lectured"
+
+- title: Service & Organization
+  type: time_table
+  contents:
+    - title: Hackathon track lead, Robust Cosmological Inference
+      institution: "KAAI Workshop: Foundation Models & Agentic Methods for Astrophysical Simulation, Carnegie Mellon University, Aug 31–Sep 3, 2026"
+      year: "2026"
+      description:
+        - 'Designed the task and its <a href="https://github.com/xwzhang98/kaai-robust-inference-hackathon-2026">public toolkit</a>'
+
+- title: Open Source Software
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/xwzhang98/CosmoSR">CosmoSR</a>
+      description:
+        - Generative adversarial network that super-resolves Quijote simulations at multiple cosmologies; used in the cosmology-aware super-resolution paper (submitted).
+    - title: <a href="https://github.com/xwzhang98/SimAgents">SimAgents</a>
+      description:
+        - Multi-agent LLM framework that turns a physical setup described in the literature into a runnable MP-GADGET configuration and first-look analysis, with a validated database of simulation parameters from published suites for evaluation.
+    - title: <a href="https://github.com/xwzhang98/SREmulator">SREmulator</a>
+      description:
+        - Neural models that transform stochastic super-resolution outputs into deterministic realizations matching specific initial conditions.
+    - title: <a href="https://github.com/xwzhang98/map2map/tree/stylegan2">map2map (stylegan2)</a>
+      description:
+        - 'Style-conditioned super-resolution models for N-body simulations (512× mass resolution), developed on Yin Li''s map2map framework; <a href="https://github.com/eelregit/map2map/pull/8">upstream PR merged</a>, 2021.'
+
+- title: Technical Skills
+  type: map
+  contents:
+    - name: Simulations
+      value: GADGET, MP-GADGET; Quijote, CAMELS, and ASTRID data products; halo finding and merger trees
+    - name: Computing
+      value: Python (PyTorch, JAX), CUDA, multi-node multi-GPU training on national HPC systems
 
 - title: Other Interests
   type: list

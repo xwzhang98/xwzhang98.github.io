@@ -31,10 +31,10 @@ I am a Ph.D. candidate in Physics at Carnegie Mellon University (expected 2027),
 
 My research develops AI methods that break the volume–resolution trade-off in cosmological simulation:
 
-- **Super-resolution and emulation** — a time-conditioned style-based GAN that super-resolves N-body simulations by **512×** in particle count, a deterministic emulator that recovers specific high-resolution realizations, and a hydrodynamic field emulator reaching sub-percent accuracy at **~450×** the speed of direct simulation.
-- **Foundation models for simulations** — a shared embedding space that makes simulations comparable across codes, resolutions, and modalities, plus interpretability of what astronomical foundation models like AION-1 encode physically.
-- **LLM agents for research** — [SimAgents](https://aclanthology.org/2025.ijcnlp-demo.7/) (IJCNLP-AACL 2025), a multi-agent system that turns papers and manuals into runnable simulation configurations.
+- **Super-resolution and emulation** — a time-conditioned style-based GAN that super-resolves N-body simulations by **512×** in particle count, a cosmology-aware model that covers every cosmology in the Quijote suite, and a deterministic emulator that recovers the specific realization implied by a simulation's initial conditions. Applied by a student I mentor to the Lyman-α forest, the same method reaches sub-percent accuracy at **260×** the speed of the hydrodynamic solver.
+- **Foundation models for simulations** — a shared "language" for simulated universes: foundation representations that make simulations and galaxy catalogs comparable across codes, resolutions, and modalities, plus interpretability of what astronomical foundation models like AION-1 encode physically.
+- **LLM agents for research** — [SimAgents](https://aclanthology.org/2025.ijcnlp-demo.7/) (IJCNLP-AACL 2025), a multi-agent system that configures and runs MP-GADGET simulations from the literature, with 80% fewer setup errors and an 83× faster setup.
 
-I am the principal investigator on an ACCESS HPC allocation, and I release my methods as open-source software ([map2map](https://github.com/xwzhang98/map2map/tree/stylegan2), [SREmulator](https://github.com/xwzhang98/SREmulator)).
+I am the PI on an NSF ACCESS allocation (PHY250036), and I release my methods as open-source software ([CosmoSR](https://github.com/xwzhang98/CosmoSR), [SimAgents](https://github.com/xwzhang98/SimAgents), [SREmulator](https://github.com/xwzhang98/SREmulator), [map2map](https://github.com/xwzhang98/map2map/tree/stylegan2)).
 
 Before CMU, I received my B.S. in Physics from ShanghaiTech University, spent a year as a visiting student at UC Berkeley, and worked on topological data analysis at ShanghaiTech's Institute of Mathematical Sciences.
