@@ -1,21 +1,31 @@
 $(document).ready(function () {
-  // add toggle functionality to abstract, award and bibtex buttons
-  $("a.abstract").click(function () {
+  // add toggle functionality to abstract, award and bibtex buttons;
+  // aria-expanded on each button follows the panel it opens
+  function syncExpanded(entry) {
+    ["abstract", "award", "bibtex"].forEach(function (kind) {
+      var open = entry.find("." + kind + ".hidden").hasClass("open");
+      entry.find(".links ." + kind).attr("aria-expanded", open ? "true" : "false");
+    });
+  }
+  $("a.abstract, button.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    syncExpanded($(this).parent().parent());
   });
-  $("a.award").click(function () {
+  $("a.award, button.award").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+    syncExpanded($(this).parent().parent());
   });
-  $("a.bibtex").click(function () {
+  $("a.bibtex, button.bibtex").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
+    syncExpanded($(this).parent().parent());
   });
-  $("a").removeClass("waves-effect waves-light");
+  $("a, .links button").removeClass("waves-effect waves-light");
 
   // bootstrap-toc
   if ($("#toc-sidebar").length) {

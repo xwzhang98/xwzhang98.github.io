@@ -21,30 +21,30 @@
   contents:
     - title: Ph.D. in Physics, expected 2027
       institution: Carnegie Mellon University, Pittsburgh, USA
-      year: 2021–present
+      year: 2021 to present
       description:
         - "Advisors: Prof. Tiziana Di Matteo and Prof. Rupert Croft"
     - title: B.S. in Physics
       institution: ShanghaiTech University, Shanghai, China
-      year: 2016–2020
+      year: 2016 to 2020
     - title: Visiting Student, Berkeley Physics International Education (BPIE) Program
       institution: University of California, Berkeley, USA
-      year: 2018–2019
+      year: 2018 to 2019
 
 - title: Research Experience
   type: time_table
   contents:
     - title: Graduate Research Assistant
       institution: McWilliams Center for Cosmology & Astrophysics, Carnegie Mellon University
-      year: 2021–present
+      year: 2021 to present
       description:
         - 'Super-resolution of N-body simulations across cosmic time: 512× more particles, validated on power spectra, halo mass functions, and merger trees. First author, <a href="https://doi.org/10.1093/mnras/stad3940">MNRAS</a>.'
-        - 'Deterministic emulator that recovers the specific realization implied by a simulation''s initial conditions (first author, <a href="https://doi.org/10.33232/001c.129471">OJAp</a>); the same method, applied by a mentee to the Lyman-α forest, reaches sub-percent accuracy at 260× the speed of the hydrodynamic solver (second author, <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>).'
+        - 'Deterministic emulator that recovers the specific realization implied by a simulation’s initial conditions (first author, <a href="https://doi.org/10.33232/001c.129471">OJAp</a>); the same method, applied by a mentee to the Lyman-α forest, reaches sub-percent accuracy at 260× the speed of the hydrodynamic solver (second author, <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>).'
         - "Cosmology-aware super-resolution: one model for every cosmology in the Quijote suite. First author, submitted."
         - 'SimAgents, a multi-agent LLM system that configures and runs MP-GADGET simulations from the literature: 80% fewer setup errors, 83× faster setup. First author, <a href="https://doi.org/10.18653/v1/2025.ijcnlp-demo.7">IJCNLP-AACL 2025</a>.'
     - title: Research Assistant
       institution: Institute of Mathematical Sciences, ShanghaiTech University
-      year: 2020–2021
+      year: 2020 to 2021
       description:
         - Topological data analysis of high-dimensional cosmological datasets; tropical-geometry representations of neural network decision boundaries.
 
@@ -71,11 +71,11 @@
   type: time_table
   contents:
     - title: NSF ACCESS Allocation PHY250036 (PI)
-      year: 2025–present
+      year: 2025 to present
       description:
         - Learning Cosmological Simulations with Graph Neural Networks
     - title: NSF ACCESS Allocation PHY240032
-      year: 2024–2025
+      year: 2024 to 2025
       description:
         - An Emulator for Transforming Random Super-Resolution Realizations to Deterministic High-Resolution Outputs
 
@@ -100,9 +100,9 @@
   contents:
     - title: Research Mentees
       items:
-        - 'Fatemeh Hafezianzadeh (graduate), Super-resolution of Lyman-α Forest Simulations, 2024–present; first author of <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>'
-        - 'Ankita Dasgupta (undergraduate), An Emulator for Deterministic Super-Resolution Output, 2023–2024; co-author of <a href="https://doi.org/10.33232/001c.129471">OJAp 8, E13</a>'
-        - Aidan Catalano & Matthew Pan (undergraduates), Learning Cosmological Simulations with Graph Neural Networks, 2025–present
+        - 'Fatemeh Hafezianzadeh (graduate), Super-resolution of Lyman-α Forest Simulations, 2024 to present; first author of <a href="https://arxiv.org/abs/2507.16189">arXiv:2507.16189</a>'
+        - 'Ankita Dasgupta (undergraduate), An Emulator for Deterministic Super-Resolution Output, 2023 to 2024; co-author of <a href="https://doi.org/10.33232/001c.129471">OJAp 8, E13</a>'
+        - Aidan Catalano & Matthew Pan (undergraduates), Learning Cosmological Simulations with Graph Neural Networks, 2025 to present
     - title: Graduate Teaching Assistant, Carnegie Mellon University
       items:
         - 33-152 Matter & Interactions II, 33-142/122 Introductory Physics II, 33-231 Physical Analysis (recitations, office hours, grading)
@@ -113,7 +113,7 @@
   type: time_table
   contents:
     - title: Hackathon track lead, Robust Cosmological Inference
-      institution: "KAAI Workshop: Foundation Models & Agentic Methods for Astrophysical Simulation, Carnegie Mellon University, Aug 31–Sep 3, 2026"
+      institution: "KAAI Workshop: Foundation Models & Agentic Methods for Astrophysical Simulation, Carnegie Mellon University, Aug 31 to Sep 3, 2026"
       year: "2026"
       description:
         - 'Designed the task and its <a href="https://github.com/xwzhang98/kaai-robust-inference-hackathon-2026">public toolkit</a>'
@@ -132,7 +132,7 @@
         - Neural models that transform stochastic super-resolution outputs into deterministic realizations matching specific initial conditions.
     - title: <a href="https://github.com/xwzhang98/map2map/tree/stylegan2">map2map (stylegan2)</a>
       description:
-        - 'Style-conditioned super-resolution models for N-body simulations (512× mass resolution), developed on Yin Li''s map2map framework; <a href="https://github.com/eelregit/map2map/pull/8">upstream PR merged</a>, 2021.'
+        - 'Style-conditioned super-resolution models for N-body simulations (512× mass resolution), developed on Yin Li’s map2map framework; <a href="https://github.com/eelregit/map2map/pull/8">upstream PR merged</a>, 2021.'
 
 - title: Technical Skills
   type: map

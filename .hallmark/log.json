@@ -1,0 +1,60 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "note": "second version at the owner request for a researcher restraint and minimalism; full on the homepage, the inner pages took the system and kept their al-folio layouts",
+  "shape": "Long Document",
+  "theme": "loom",
+  "axes": "light/roman-serif/cool",
+  "hero": "Banner",
+  "nav": "edge-aligned letterhead",
+  "footer": "colophon",
+  "imagery": "the owner avatar in one slot, in the close",
+  "photos": [],
+  "entry": "none",
+  "fingerprint": "Left-margin|Two-column asymmetric|Hairline|Unstyled link|Margin-aligned|None",
+  "sections": [
+   "hero",
+   "research",
+   "selected publications",
+   "news",
+   "contact"
+  ],
+  "signature": "the owner claim set quietly in Caslon over a ruled document of the work",
+  "waived": [
+   "78"
+  ],
+  "prompt": "a researcher personal academic homepage, restrained and minimal: quiet type, generous white space, plain text links, no ornament; a physics PhD candidate who builds machine learning methods for cosmological simulations",
+  "date": "2026-10-28"
+ },
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "note": "full on the homepage; the inner pages took the system and kept their al-folio layouts",
+  "shape": "Long Document",
+  "theme": "newsprint",
+  "axes": "light/slab-serif/warm",
+  "hero": "Banner",
+  "nav": "masthead",
+  "footer": "mast",
+  "imagery": "the owner avatar in one slot, in the close",
+  "photos": [],
+  "entry": "none",
+  "fingerprint": "Hanging|Three equal columns|Double rule|Solid|Inline|None",
+  "sections": [
+   "hero",
+   "figures (box score)",
+   "story in three columns",
+   "selected publications",
+   "news",
+   "contact"
+  ],
+  "signature": "the owner research figures (512x, 260x, 83x) as a box score between double rules",
+  "waived": [],
+  "prompt": "personal academic homepage of a physics PhD candidate who builds machine learning methods for cosmological simulations; read by fellowship committees, faculty and collaborators for research, publications, talks and CV",
+  "draw": "02d3d1",
+  "date": "2026-10-28"
+ }
+]

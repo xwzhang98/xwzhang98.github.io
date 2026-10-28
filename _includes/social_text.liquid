@@ -1,0 +1,45 @@
+{% comment %}
+  Text links for the profiles in _data/socials.yml, in file order.
+  The hrefs match _includes/social.liquid; only the labels differ.
+  Email is left out: the homepage's close sets it, with the CV, as a pair of text links above this list.
+{% endcomment %}
+{% for social in site.data.socials %}
+  {% case social[0] %}
+    {% when 'email' %}
+      {% comment %} set above this list, beside the CV {% endcomment %}
+    {% when 'github_username' %}
+      <li><a href="https://github.com/{{ social[1] }}">GitHub</a></li>
+    {% when 'gitlab_username' %}
+      <li><a href="https://gitlab.com/{{ social[1] }}">GitLab</a></li>
+    {% when 'linkedin_username' %}
+      <li><a href="https://www.linkedin.com/in/{{ social[1] }}">LinkedIn</a></li>
+    {% when 'orcid_id' %}
+      <li><a href="https://orcid.org/{{ social[1] }}">ORCID</a></li>
+    {% when 'scholar_userid' %}
+      <li><a href="https://scholar.google.com/citations?user={{ social[1] }}">Google Scholar</a></li>
+    {% when 'inspirehep_id' %}
+      <li><a href="https://inspirehep.net/authors/{{ social[1] }}">INSPIRE</a></li>
+    {% when 'semanticscholar_id' %}
+      <li><a href="https://www.semanticscholar.org/author/{{ social[1] }}">Semantic Scholar</a></li>
+    {% when 'research_gate_profile' %}
+      <li><a href="https://www.researchgate.net/profile/{{ social[1] }}/">ResearchGate</a></li>
+    {% when 'bluesky_url' %}
+      <li><a href="{{ social[1] }}">Bluesky</a></li>
+    {% when 'x_username' %}
+      <li><a href="https://twitter.com/{{ social[1] }}">X</a></li>
+    {% when 'mastodon_username' %}
+      <li><a rel="me" href="https://{{ social[1] }}">Mastodon</a></li>
+    {% when 'youtube_id' %}
+      <li><a href="https://youtube.com/@{{ social[1] }}">YouTube</a></li>
+    {% when 'work_url' %}
+      <li><a href="{{ social[1] }}">Work</a></li>
+    {% when 'rss_icon' %}
+      <li><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>
+    {% else %}
+      {% if social[1].url %}
+        <li>
+          <a href="{{ social[1].url }}">{{ social[1].title }}</a>
+        </li>
+      {% endif %}
+  {% endcase %}
+{% endfor %}

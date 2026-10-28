@@ -46,8 +46,8 @@ rss_icon: true
 # Layout
 # -----------------------------------------------------------------------------
 
-navbar_fixed: true
-footer_fixed: true
+navbar_fixed: false
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 bib_search: true
@@ -85,8 +85,9 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Notes # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+# the /blog/ page takes its title and description from _pages/blog.md; these two are kept in step with it
+blog_name: Blog
+blog_description: Notes on research, simulations and machine learning.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -183,10 +184,9 @@ exclude:
   - purgecss.config.js
   - README.md
   - CLAUDE.md
+  - DESIGN.md
   - readme_preview/
   - vendor
-  - _posts
-  - _pages/blog.md
   - _pages/profiles.md
   - _pages/dropdown.md
   - _pages/repositories.md
@@ -230,7 +230,8 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
-  # exclude: ["robots.txt", "assets/js/search/*.js"]
+  # its CSS compressor strips the spaces around + in clamp(), which breaks every fluid size in the Hallmark CSS
+  exclude: ["assets/css/hallmark/*.css"]
 
 # -----------------------------------------------------------------------------
 # Terser
@@ -440,7 +441,7 @@ third_party_libraries:
     version: "5.5.0"
   google_fonts:
     url:
-      fonts: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&display=swap"
+      fonts: "https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Hanken+Grotesk:ital,wght@0,400;0,500;1,400&display=swap"
   highlightjs:
     integrity:
       css:

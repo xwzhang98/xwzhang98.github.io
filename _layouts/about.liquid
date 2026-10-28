@@ -1,80 +1,99 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+{% assign socials = site.data.socials %}
+<article class="home">
+  <!-- Opening: the claim, one sentence, two plain links, and the owner's drawing beside them -->
+  <section class="home-hero" aria-labelledby="home-head">
+    <div class="home-hero__text">
+      <h1 id="home-head">{{ page.headline | default: page.title }}</h1>
+      {% if page.lede %}
+        <p class="lead">{{ page.lede }}</p>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
-
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+      <p class="home-hero__links">
+        {% if socials.email %}
+          <a class="link" href="mailto:{{ socials.email | encode_email }}">Email</a>
         {% endif %}
+        {% if page.cv_pdf %}
+          <a class="link" href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}">CV (PDF)</a>
+        {% endif %}
+      </p>
+    </div>
+    {% if page.profile.image %}
+      <div class="home-portrait" data-slot="portrait" data-alt="A portrait photograph of {{ site.first_name }} {{ site.last_name }}">
+        <img
+          src="{{ page.profile.image | prepend: '/assets/img/' | relative_url | bust_file_cache }}"
+          width="636"
+          height="636"
+          alt="{{ page.profile.alt }}"
+        >
+      </div>
+    {% endif %}
+  </section>
+
+  <!-- Research: the bio in one reading column, its label in the margin -->
+  <section class="home-row" aria-labelledby="research-head">
+    <h2 id="research-head">Research</h2>
+    <div class="home-row__body home-prose">{{ content }}</div>
+  </section>
+
+  <!-- Selected publications -->
+  {% if page.selected_papers %}
+    <section class="home-row home-row--list home-papers" aria-labelledby="papers-head">
+      <h2 id="papers-head">Selected publications</h2>
+      <div class="home-row__body">
+        {% include selected_papers.liquid %}
+        <p class="home-row__more"><a class="link" href="{{ '/publications/' | relative_url }}">All publications</a></p>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- News -->
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="home-row home-row--list home-news" aria-labelledby="news-head">
+      <h2 id="news-head">News</h2>
+      <div class="home-row__body">
+        {% include news.liquid limit=true %}
+        <p class="home-row__more"><a class="link" href="{{ '/news/' | relative_url }}">All news</a></p>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Latest posts -->
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <section class="home-row home-posts" aria-labelledby="posts-head">
+      <h2 id="posts-head">Latest posts</h2>
+      <div class="home-row__body">
+        {% include latest_posts.liquid %}
+        <p class="home-row__more"><a class="link" href="{{ '/blog/' | relative_url }}">All posts</a></p>
+      </div>
+    </section>
+  {% endif %}
+
+  <!-- Contact -->
+  {% if page.social %}
+    <section class="home-row home-contact" aria-labelledby="contact-head">
+      <h2 id="contact-head">Contact</h2>
+      <div class="home-row__body home-contact__body">
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <address class="home-contact__address">{{ page.profile.more_info }}</address>
+        {% endif %}
+        <!-- The opening's pair again, then the profiles: three columns across with the address -->
+        <ul class="home-contact__pair">
+          {% if socials.email %}
+            <li><a class="link" href="mailto:{{ socials.email | encode_email }}">Email</a></li>
+          {% endif %}
+          {% if page.cv_pdf %}
+            <li><a class="link" href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}">CV (PDF)</a></li>
+          {% endif %}
+        </ul>
+        <ul class="home-contact__profiles">
+          {% include social_text.liquid %}
+        </ul>
+        {% if site.contact_note %}
+          <p class="contact-note">{{ site.contact_note }}</p>
         {% endif %}
       </div>
-    {% endif %}
-
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
-
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
-</div>
+    </section>
+  {% endif %}
+</article>
