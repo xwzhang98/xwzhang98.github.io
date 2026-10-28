@@ -190,6 +190,7 @@ exclude:
   - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
+  - CLAUDE.md
   - readme_preview/
   - vendor
   - _posts
