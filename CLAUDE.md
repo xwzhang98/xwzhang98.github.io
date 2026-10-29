@@ -8,7 +8,7 @@ Personal academic website of Xiaowen Zhang (Physics PhD candidate at CMU, machin
 
 ## Commands
 
-- **Preview with Docker (al-folio's supported route):** `docker compose up` serves http://localhost:8080 with live reload. `bin/entry_point.sh` restarts Jekyll whenever `_config.yml` changes, because Jekyll never reloads its config on its own. `docker-compose-slim.yml` uses a smaller image.
+- **Preview with Docker (al-folio's supported route):** `docker compose up` serves `http://localhost:8080` with live reload. `bin/entry_point.sh` restarts Jekyll whenever `_config.yml` changes, because Jekyll never reloads its config on its own. `docker-compose-slim.yml` uses a smaller image.
 - **Preview natively:** `bundle install && bundle exec jekyll serve`. Needs Ruby 3.x (CI uses 3.3.5) and ImageMagick on `PATH`; the macOS system Ruby (2.6) is too old.
 - **Production build, as CI runs it:** `JEKYLL_ENV=production bundle exec jekyll build`, then `purgecss -c purgecss.config.js`. PurgeCSS strips any selector not found in the built HTML/JS, so a class that only appears at runtime can disappear in production.
 - **Format check (the only lint; CI fails on it):** `npx prettier . --check`, or `--write` to fix. Prettier 3.1.1 with `@shopify/prettier-plugin-liquid`, `printWidth: 150`; exclusions live in `.prettierignore`.
